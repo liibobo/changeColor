@@ -1,0 +1,23 @@
+$font-color-theme: red;
+$font-color-theme1: pink;
+$font-color-theme2: orange;
+$font-color-theme3: blue;
+
+@mixin background_color {
+  [theme="theme"] {
+    color: red;
+    background: red;
+  }
+  [theme="theme1"] {
+    color: $font-color-theme1;
+    background:  $font-color-theme1;
+  }
+  [theme="theme2"] {
+    color:$font-color-theme2;
+    background:  $font-color-theme2;
+  }
+  [theme="theme3"] {
+    color: $font-color-theme3;
+    background:  $font-color-theme3;
+  }
+}
