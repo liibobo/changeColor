@@ -10,6 +10,6 @@ export default {
 </script>
 <style lang="scss" scoped>
 .home {
-  background: turquoise;
+  background: var(--fontColor);
 }
 </style>

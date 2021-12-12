@@ -1,0 +1,16 @@
+body {
+  --fontColor: red;
+  --bgColor: white;
+}
+body.theme1 {
+  --fontColor: white;
+  --bgColor: black;
+}
+body.theme2 {
+  --fontColor: blue;
+  --bgColor: gray;
+}
+body.theme3 {
+  --fontColor: green;
+  --bgColor: blue;
+}

@@ -1,14 +1,16 @@
 <template>
  <div class="app" ref="theme" theme='theme'>
-  <div class="content">
-    <p @click="changeTheme('theme')">白</p>
-    <p @click="changeTheme('theme1')">灰</p>
-    <p @click="changeTheme('theme2')">换肤3</p>
-    <p @click="changeTheme('theme3')">换肤4</p>
-  </div>
+    <div class="content">
+      <p @click="changeTheme('theme')">白</p>
+      <p @click="changeTheme('theme1')">换肤3</p>
+      <p @click="changeTheme('theme2')">灰</p>
+      <p @click="changeTheme('theme3')">换肤4</p>
+    </div>
+    <Home />
  </div>
 </template>
 <script>
+import Home from './views/Home.vue';
 export default {
   name: 'mine',
   data () {
@@ -21,30 +23,20 @@ export default {
   },
   methods: {
   changeTheme (theme) {
-    this.dom.setAttribute('theme', theme)
+    document.body.setAttribute('class', theme)
   }
   },
   components: {
+    Home
   }
 }
 </script>
-<style lang="scss">
-@import "./assets/scss/temp.scss";
-body {
-  @include bg_color();
-}
-.app {
-  display: inline-block;
-  height: 100%;
+<style>
+@import "./assets/scss/temp.css";
+.content {
   width: 100%;
-  p {
-    display: inline-block;
-    padding: 10px 20px;
-    border-width: 1px;
-    border-radius: 10px;
-    border-style: solid;
-    margin: 20px;
-    cursor: pointer;
-  }
+  height: 100%;
+  color: var(--fontColor);
+  background: var(--bgColor);
 }
 </style>
