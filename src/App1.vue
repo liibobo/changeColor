@@ -42,7 +42,6 @@ body {
   p {
     display: inline-block;
     padding: 10px 20px;
-    // border: 1px solid greenyellow;
     border-width: 1px;
     border-radius: 10px;
     border-style: solid;

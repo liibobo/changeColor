@@ -1,5 +1,5 @@
 <template>
- <div class="app" ref="theme" theme='theme'>
+ <div class="app" theme='theme'>
     <div class="content">
       <p @click="changeTheme('theme')">白</p>
       <p @click="changeTheme('theme1')">换肤3</p>
@@ -19,7 +19,6 @@ export default {
   }
   },
   mounted() {
-    this.dom = this.$refs.theme;
   },
   methods: {
   changeTheme (theme) {
