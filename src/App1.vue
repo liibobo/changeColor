@@ -29,9 +29,11 @@ export default {
 }
 </script>
 <style lang="scss">
-@import "./assets/scss/temp.scss";
+@import "./assets/scss/temp1.scss";
 body {
-  @include bg_color();
+  @include background_color;
+  @include fontColor;
+  @include btn_border;
 }
 .app {
   display: inline-block;
@@ -40,6 +42,7 @@ body {
   p {
     display: inline-block;
     padding: 10px 20px;
+    // border: 1px solid greenyellow;
     border-width: 1px;
     border-radius: 10px;
     border-style: solid;

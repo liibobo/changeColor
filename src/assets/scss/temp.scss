@@ -1,23 +1,34 @@
-$font-color-theme: red;
-$font-color-theme1: pink;
-$font-color-theme2: orange;
-$font-color-theme3: blue;
+$bg: white;
+$bg1: gray;
+$bg2: orange;
+$bg3: blue;
 
-@mixin background_color {
+$fontColor: black;
+$fontColor1: white;
+$fontColor2: blue;
+$fontColor3: green;
+
+$btnColor: greenyellow;
+$btnColor1: white;
+$btnColor2: green;
+$btnColor3: gray;
+
+
+@mixin bg_color() {
   [theme="theme"] {
-    color: red;
-    background: red;
+    color: $fontColor;
+    background: $bg;
   }
   [theme="theme1"] {
-    color: $font-color-theme1;
-    background:  $font-color-theme1;
+    color: $fontColor1;
+    background: $bg1;
   }
   [theme="theme2"] {
-    color:$font-color-theme2;
-    background:  $font-color-theme2;
+    color: $fontColor2;
+    background: $bg2;
   }
   [theme="theme3"] {
-    color: $font-color-theme3;
-    background:  $font-color-theme3;
+    color: $fontColor3;
+    background: $bg3;
   }
 }
