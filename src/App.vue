@@ -32,7 +32,7 @@ export default {
 </script>
 <style>
 @import "./assets/scss/temp.css";
-.content {
+.app {
   width: 100%;
   height: 100vh;
   color: var(--fontColor);
