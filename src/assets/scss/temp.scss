@@ -13,7 +13,6 @@ $btnColor1: white;
 $btnColor2: green;
 $btnColor3: gray;
 
-
 @mixin background_color {
   [theme="theme"] {
     background: $bg;

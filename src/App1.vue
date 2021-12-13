@@ -29,7 +29,7 @@ export default {
 }
 </script>
 <style lang="scss">
-@import "./assets/scss/temp1.scss";
+@import "./assets/scss/temp.scss";
 body {
   @include background_color;
   @include fontColor;
