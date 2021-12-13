@@ -34,7 +34,7 @@ export default {
 @import "./assets/scss/temp.css";
 .content {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   color: var(--fontColor);
   background: var(--bgColor);
 }

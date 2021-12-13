@@ -7,10 +7,10 @@ body.theme1 {
   --bgColor: black;
 }
 body.theme2 {
-  --fontColor: blue;
+  --fontColor: white;
   --bgColor: gray;
 }
 body.theme3 {
-  --fontColor: green;
+  --fontColor: orange;
   --bgColor: blue;
 }
